@@ -75,7 +75,8 @@ input::-webkit-inner-spin-button {
 .login:hover{
   cursor: pointer;
 }
-.login:disabled{
+.login:disabled, .verify-otp:disabled,
+#otp:disabled {
   opacity: 50%;
 }
 .verify-otp {
@@ -91,4 +92,8 @@ input::-webkit-inner-spin-button {
 }
 .verify-otp{
   cursor: pointer;
+}
+
+#otp:disabled {
+    
 }

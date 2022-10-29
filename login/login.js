@@ -13,8 +13,13 @@ function validate() {
         if (attempt == 0) {
             document.getElementById("mobile").disabled = true;
             document.getElementById("otp").disabled = true;
-            document.getElementById("submit").disabled = true;
+            document.getElementById("btn-verify").disabled = true;
             return false;
         }
     }
+}
+function getOtp() {
+    document.getElementById("btn-otp").disabled = true;
+    document.getElementById("btn-verify").disabled = false;
+    document.getElementById("otp").disabled = false;
 }
