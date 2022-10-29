@@ -32,6 +32,28 @@
   height: 60px;
 }
 
+.logout-btn{
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.logout-btn:hover{
+  color: rgb(203, 202, 202);
+}
+.top-btn{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.top-btn:hover{
+  color: rgb(203, 202, 202);
+}
+
+
 .home-caption{
   text-align: center;
   color: #fff;
