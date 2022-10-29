@@ -78,7 +78,8 @@ input::-webkit-inner-spin-button {
   color: #f43f68;
   border: 1px solid #f43f68;
 }
-.login:disabled{
+.login:disabled, .verify-otp:disabled,
+#otp:disabled {
   opacity: 50%;
 }
 .verify-otp {

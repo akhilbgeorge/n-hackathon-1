@@ -14,10 +14,10 @@
       <div class="right">
         <form id="form_id" method="post" name="myform" class="loginbox">
           <input id="mobile" type="number" placeholder="Phone number" class="phoneno" />
-          <input id="otp" type="number" placeholder=" OTP" class="otp" />
+          <input id="otp" type="number" placeholder=" OTP" class="otp" disabled/>
           <div class="confirm-btns">
-            <button type="button" onclick="this.disabled = true" id="btn-otp" class="login">Get OTP</button>
-            <button type="button" onclick="validate()" class="verify-otp">Verify OTP</button>
+            <button type="button" onclick="getOtp()" id="btn-otp" class="login">Get OTP</button>
+            <button type="button" onclick="validate()" id="btn-verify" class="verify-otp" disabled>Verify OTP</button>
           </div>
         </form>
       </div>
