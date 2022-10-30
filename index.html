@@ -34,10 +34,7 @@
           <!-- <h6>Add Restaurant</h6> -->
           <button class="top-btn">Contact</button>
           <button class="top-btn">About us</button>
-          <button
-            onclick="window.location = 'login/login.html'"
-            class="logout-btn"
-          >
+          <button onclick="window.location = 'login/login.html'" class="logout-btn">
             <span>Logout</span>
             <i class="bi bi-box-arrow-right"></i>
           </button>
@@ -50,12 +47,10 @@
           <input
             placeholder="Search for restaurant, place"
             class="search-bar"
-            type="text"
+            type="text" 
             id="search"
           />
-          <button class="search-button" id="btn-search" onclick="search()">
-            <i class="bi bi-search"></i>
-          </button>
+          <button class="search-button" id="btn-search" onclick="search()"><i class="bi bi-search"></i></button>
         </div>
       </div>
       <div class="center-container">
@@ -67,7 +62,7 @@
               id="btn-check-outlined"
               autocomplete="off"
             />
-            <label class="btn btn-outline-success" for="btn-check-outlined"
+            <label class="btn btn-outline-success" for="btn-check-outlined" onclick="search()"
               >Veg</label
             >
             <input
@@ -76,7 +71,7 @@
               id="btn-check-outlined-non"
               autocomplete="off"
             />
-            <label class="btn btn-outline-danger" for="btn-check-outlined-non"
+            <label class="btn btn-outline-danger" for="btn-check-outlined-non" onclick="search1()"
               >Non-Veg</label
             >
             <input
@@ -87,10 +82,10 @@
               autocomplete="off"
               checked
             />
-            <label class="btn btn-outline-primary" for="success-outlined-dinein"
+            <label class="btn btn-outline-primary" for="success-outlined-dinein" onclick="search2()"
               >Dine-In</label
             >
-
+  
             <input
               type="radio"
               class="btn-check"
@@ -98,9 +93,7 @@
               id="danger-outlined-takeaway"
               autocomplete="off"
             />
-            <label
-              class="btn btn-outline-primary"
-              for="danger-outlined-takeaway"
+            <label class="btn btn-outline-primary" for="danger-outlined-takeaway" onclick="search3()"
               >Take Away</label
             >
           </div>
@@ -109,60 +102,14 @@
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 box">
-                <img
-                  src="./hackathon-foodImages/aloo-paratha.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="./hackathon-foodImages/rice-with-chicken.jpg" class="card-img-top-1" id ="card-image-1" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title-1" id="card-title-1"></h5>
+                  <p><font color="green" id="location-1"></font></p>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
                     little bit longer.
-                  </p>
-                  
-                  <div class="card-footer card-foot">
-                    <small class="text-muted">⭐⭐⭐⭐</small>
-                    <button class="btn btn-success">open</button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 box">
-                <img
-                  src="./hackathon-foodImages/chinese-cuisine.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title" id="card-title-2"></h5>
-                  <p class="card-text">This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.</p>
-                  <div class="card-footer card-foot">
-                    <small class="text-muted">⭐⭐⭐</small>
-                    <button class="btn btn-danger">closed</button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 box">
-                <img
-                  src="./hackathon-foodImages/suji-ka-halwa-rava.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title" id="card-title-3"></h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.This content is a
-                    little bit longer
                   </p>
                   <div class="card-footer card-foot">
                     <small class="text-muted">⭐⭐</small>
@@ -173,21 +120,51 @@
             </div>
             <div class="col">
               <div class="card h-100 box">
-                <img
-                  src="./hackathon-foodImages/misal-pav.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+                <img src="./hackathon-foodImages/chinese-cuisine.jpg" class="card-img-top-2" id ="card-image-2" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" id="card-title-2"></h5>
+                  <p><font color="green" id="location-2"></font></p>
+                  <p class="card-text">This is a short card.</p>
+                  <div class="card-footer card-foot">
+                    <small class="text-muted">⭐⭐⭐⭐⭐</small>
+                    <button class="btn btn-success">open</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 box">
+                <img src="./hackathon-foodImages/suji-ka-halwa-rava.jpg" class="card-img-top-3" id ="card-image-3" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" id="card-title-3"></h5>
+                  <p><font color="green" id="location-3"></font></p>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                  <div class="card-footer card-foot">
+                    <small class="text-muted">⭐⭐⭐</small>
+                    <button class="btn btn-danger">closed</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 box">
+                <img src="./hackathon-foodImages/rice-with-chicken.jpg" class="card-img-top-4" id ="card-image-4" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
+                  <p><font color="green" id="location-4">kakkanad</font></p>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
                     little bit longer.
                   </p>
                   <div class="card-footer card-foot">
-                    <small class="text-muted">⭐⭐⭐⭐⭐</small>
+                    <small class="text-muted">⭐⭐⭐⭐</small>
                     <button class="btn btn-success">open</button>
+
                   </div>
                 </div>
               </div>
