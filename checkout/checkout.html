@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-container">
+      <div>
+        <h2 class="checkout-caption">Checkout</h2>
+      </div>
+      <div class="main-container">
+        <div class="checkout-items-container">
+          <div class="item-card">
+            <div class="image-container"></div>
+            <div class="detail-container">
+              <div class="item-top-container">
+                <span>Crispy Chicken Fry</span>
+                <div class="button-container">
+                  <button id="btn-minus-1" onclick="decrement1()">-</button>
+                  <button id="btn-plus-2" onclick="increment1()">+</button>
+                </div>
+              </div>
+              <div class="item-bottom-container">
+                <span>Rs 100</span>
+                <input class="count" type="text" id="count-1" value="1"/>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="image-container"></div>
+            <div class="detail-container">
+              <div class="item-top-container">
+                <span>Crispy Chicken Fry</span>
+                <div class="button-container">
+                  <button id="btn-minus-2" onclick="decrement2()">-</button>
+                  <button id="btn-plus-2" onclick="increment2()">+</button>
+                </div>
+              </div>
+              <div class="item-bottom-container">
+                <span>Rs 150</span>
+                <input class="count" type="text-2" id="count-2" value="0"/>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="image-container"></div>
+            <div class="detail-container">
+              <div class="item-top-container">
+                <span>Crispy Chicken Fry</span>
+                <div class="button-container">
+                  <button>-</button>
+                  <button>+</button>
+                </div>
+              </div>
+              <div class="item-bottom-container">
+                <span>Rs 100</span>
+                <input class="count" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-container">
+          <div class="payment-form">
+            <div class="payment-caption">
+              <h2>Payment</h2>
+            </div>
+            <div class="pay-with-container">
+              <h4>Pay-with:</h4>
+              <div class="pay-with-radios">
+                <input class="pay-radio" type="radio" name="radio" checked="checked"/>
+                <label for="card">Card</label>
+                <input class="pay-radio" type="radio" name="radio"/>
+                <label for="card">Bank</label>
+                <input class="pay-radio" type="radio" name="radio"/>
+                <label for="card">UPI</label>
+              </div>
+            </div>
+            <div class="card-no-container">
+              <h4>Card Number</h4>
+              <input class="form-input" type="text" value="XXX XXXX XXXX 2354"  readonly/>
+            </div>
+            <div class="exp-cvv-container">
+              <div class="exp">
+                <h4>Expiration Date</h4>
+                <input placeholder=" YYYY-MM" class="form-input" value="2023-12" type="text" readonly />
+              </div>
+              <div class="cvv">
+                <h4>CVV</h4>
+                <input class="form-input" class="" type="password" />
+              </div>
+            </div>
+            <div>
+              <input class="check" type="checkbox" checked/>
+              <label for="">Save card details</label>
+            </div>
+            <button class="submit-btn" type="submit" id="btn-sum" onclick="doPayment()">Pay Rs 0</button>
+            <small class="footer-des">
+              Your personal data will be used to process your order, support
+              your experience throughout this website, and for other purposes
+              described in our privacy policy.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./checkout.js"></script>
+</html>
