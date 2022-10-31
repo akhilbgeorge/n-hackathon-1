@@ -16,19 +16,6 @@ window.onload=function() {
     })
 };
 
-// function search() {
-//     $.ajax({
-//         url: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=cruise&location=10.017594%2C76.342077&radius=1500&type=restaurant&key=AIzaSyAYz8O3E3wZD7cmoTtNIWpZS3Bx-1ul0AQ",
-//         type:'GET',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         dataType: "json",
-//     }).done(function (response) {
-//         console.log(response)
-//     })
-
-// }
 
 function search() {
         $.ajax({
